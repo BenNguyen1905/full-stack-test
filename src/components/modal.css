@@ -1,0 +1,54 @@
+.ModalOpened {
+  background: rgb(0, 0, 0, 0.4);
+  height: 100vh !important;
+  width: 100vw !important;
+  overflow: hidden;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.ModalWrapper {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.Modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  color: black;
+  .ModalHeader,
+  .ModalContent,
+  .ModalFooter {
+    width: 100%;
+  }
+  .ModalHeader {
+    min-height: 15%;
+  }
+  .ModalContent {
+    height: 100%;
+  }
+  .ModalFooter {
+    min-height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    .FooterButtonGroup {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
