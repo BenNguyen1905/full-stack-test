@@ -1,4 +1,4 @@
-# A few word
+# A few words
 
 Hello AlexLuong,
 
